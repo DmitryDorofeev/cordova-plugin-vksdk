@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.dmitrydorofeev.vksdk"
+        version="0.7.0">
+
+    <name>VkSdk</name>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <asset src="www/vksdk.js" target="js/vksdk.js"/>
+
+    <js-module src="www/vksdk.js" name="vksdk">
+        <clobbers target="vksdk" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VkSdk">
+                <param name="android-package" value="com.dmitrydorofeev.VkSdk"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/VkSdk.java" target-dir="src/com/dmitrydorofeev/plugin/"/>
+    </platform>
+
+</plugin>
