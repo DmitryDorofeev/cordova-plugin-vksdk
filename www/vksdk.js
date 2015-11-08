@@ -21,6 +21,6 @@
 
 module.exports = {
     greet: function (name, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "Hello", "greet", [name]);
+        cordova.exec(successCallback, errorCallback, "VkSdk", "greet", [name]);
     }
 };

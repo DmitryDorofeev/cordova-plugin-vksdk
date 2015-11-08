@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.dmitrydorofeev.vksdk"
+        id="cordova-plugin-vksdk"
         version="0.7.0">
 
     <name>VkSdk</name>
@@ -19,11 +19,11 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="VkSdk">
-                <param name="android-package" value="com.dmitrydorofeev.VkSdk"/>
+                <param name="android-package" value="com.vk.sdk"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/VkSdk.java" target-dir="src/com/dmitrydorofeev/plugin/"/>
+        <source-file src="src/android/VkSdk.java" target-dir="src/com/vk/sdk/"/>
     </platform>
 
 </plugin>
